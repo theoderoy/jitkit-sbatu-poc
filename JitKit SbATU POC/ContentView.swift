@@ -10,17 +10,52 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("JitKit SbATU POC")
+                .font(.largeTitle.weight(.medium))
+            
+            Spacer()
+                .frame(width: 0, height: 30)
+                .clipped()
+            
+            Text("SideStore by jkcoxson")
+            
+            Text("JIT URL injection update by Spidy")
+            
+            Spacer()
+                .frame(width: 0, height: 30)
+                .clipped()
+            
+Link("Inject to specified App ID", destination: URL(string: "sidestore://jitenable?url=[APPID-HERE]")!).buttonStyle(ButtonFromInteractfulROFL()) .frame(maxWidth: 300)
+            
+            Spacer()
+                .frame(width: 0, height: 30)
+                .clipped()
+            
+            Text("Enter the correct App ID at line 28")
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            
+            Spacer()
+                .frame(width: 0, height: 20)
+                .clipped()
+            
+            Text("in it's current state, the success rate can be picky. It could help if SideStore was already open in the background, but this (until now) is relatively untested.")
+            .frame(maxWidth: 300)
+            
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+public struct ButtonFromInteractfulROFL: ButtonStyle {
+    public func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .font(Font.body.weight(.medium))
+            .padding(.vertical, 12)
+            .foregroundColor(Color.white)
+            .frame(maxWidth: .infinity)
+            .background(
+                RoundedRectangle(cornerRadius: 14.0, style: .continuous)
+                    .fill(Color.accentColor)
+            )
+            .opacity(configuration.isPressed ? 0.4 : 1.0)
     }
 }
