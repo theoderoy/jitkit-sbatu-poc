@@ -33,6 +33,7 @@ Link("Inject to specified App ID", destination: URL(string: "sidestore://jitenab
             
             Text("Enter the correct App ID at line 28 in Xcode, then compile")
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .frame(maxWidth: 300)
             
             Spacer()
                 .frame(width: 0, height: 20)
