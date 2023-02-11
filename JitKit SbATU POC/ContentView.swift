@@ -19,7 +19,7 @@ struct ContentView: View {
             
             Text("SideStore by jkcoxson")
             
-            Text("JIT URL injection update by Spidy")
+            Text("SideStore:// URL support by Spidy123222")
             
             Spacer()
                 .frame(width: 0, height: 30)
@@ -31,7 +31,7 @@ Link("Inject to specified App ID", destination: URL(string: "sidestore://jitenab
                 .frame(width: 0, height: 30)
                 .clipped()
             
-            Text("Enter the correct App ID at line 28")
+            Text("Enter the correct App ID at line 28 in Xcode, then compile")
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             
             Spacer()
