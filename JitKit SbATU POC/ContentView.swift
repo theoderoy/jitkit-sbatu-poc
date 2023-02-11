@@ -22,7 +22,7 @@ struct ContentView: View {
             
             Text("SideStore by SideTeam")
             
-            Text("SideStore:// URL support by Spidy123222")
+            Text("SideStore:// URL scheme by Spidy123222")
             
             Spacer()
                 .frame(width: 0, height: 30)
@@ -35,7 +35,7 @@ struct ContentView: View {
                 .frame(width: 0, height: 20)
                 .clipped()
             
-            Link("Inject to specified App ID", destination: URL(string: "sidestore://jitenable?url=\(appid)")!).buttonStyle(ButtonFromInteractfulROFL()) .frame(maxWidth: 300)
+            Link("Inject to specified App ID", destination: URL(string: "sidestore://sidejit-enable?url=\(appid)")!).buttonStyle(ButtonFromInteractfulROFL()) .frame(maxWidth: 300)
             
         }
     }
