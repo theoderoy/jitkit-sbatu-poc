@@ -1,3 +1,4 @@
+![JitKit SbATU POC icon](./img/icon.png)
 # JitKit SbATU POC
 SideStore-based Application Testing Unit
 
