@@ -38,7 +38,7 @@ Link("Inject to specified App ID", destination: URL(string: "sidestore://jitenab
                 .frame(width: 0, height: 20)
                 .clipped()
             
-            Text("in it's current state, the success rate can be picky. It could help if SideStore was already open in the background, but this (until now) is relatively untested.")
+            Text("In it's current state, the success rate can be picky. It could help if SideStore was already open in the background, but this (until now) is relatively untested.")
             .frame(maxWidth: 300)
             
         }
