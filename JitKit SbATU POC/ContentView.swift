@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var appid = ("null")
+    @State var appid = ("")
     
     var body: some View {
         VStack {
@@ -29,6 +29,7 @@ struct ContentView: View {
                 .clipped()
             
             TextField("Enter App ID", text: $appid)
+                .frame(maxWidth: 300) .textFieldStyle(.roundedBorder)
             
             Spacer()
                 .frame(width: 0, height: 20)
