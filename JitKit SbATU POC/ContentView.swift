@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var appid = ("null")
+    
     var body: some View {
         VStack {
             Text("JitKit SbATU POC")
@@ -25,22 +28,13 @@ struct ContentView: View {
                 .frame(width: 0, height: 30)
                 .clipped()
             
-Link("Inject to specified App ID", destination: URL(string: "sidestore://jitenable?url=[APPID-HERE]")!).buttonStyle(ButtonFromInteractfulROFL()) .frame(maxWidth: 300)
-            
-            Spacer()
-                .frame(width: 0, height: 30)
-                .clipped()
-            
-            Text("Enter the correct App ID at line 28 in Xcode, then compile")
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .frame(maxWidth: 300)
+            TextField("Enter App ID", text: $appid)
             
             Spacer()
                 .frame(width: 0, height: 20)
                 .clipped()
             
-            Text("In it's current state, the success rate can be picky. It could help if SideStore was already open in the background, but this (until now) is relatively untested.")
-            .frame(maxWidth: 300)
+            Link("Inject to specified App ID", destination: URL(string: "sidestore://jitenable?url=\(appid)")!).buttonStyle(ButtonFromInteractfulROFL()) .frame(maxWidth: 300)
             
         }
     }
