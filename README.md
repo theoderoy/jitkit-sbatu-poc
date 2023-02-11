@@ -2,7 +2,7 @@
 SideStore-based Application Testing Unit
 
 ## what even is this
-proof-of-concept iOS application that automates JIT-acceleration with SideStore using the SideStore:// URL scheme with the latest pull-request build (as of Feb 10 2023)
+this is a proof-of-concept iOS application that automates JIT-acceleration with SideStore using the SideStore:// URL scheme with the latest pull-request build (as of Feb 10 2023)
 
 ### Requirements
 
