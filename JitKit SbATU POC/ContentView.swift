@@ -55,3 +55,9 @@ public struct ButtonFromInteractfulROFL: ButtonStyle {
             .opacity(configuration.isPressed ? 0.4 : 1.0)
     }
 }
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
