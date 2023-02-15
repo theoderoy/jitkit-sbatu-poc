@@ -9,34 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var appid = ("")
+    @State var writtenappid = ("")
     
     var body: some View {
-        VStack {
-            Text("JitKit SbATU POC")
-                .font(.largeTitle.weight(.medium))
-            
-            Spacer()
-                .frame(width: 0, height: 30)
-                .clipped()
-            
-            Text("SideStore by SideTeam")
-            
-            Text("SideStore:// URL scheme by Spidy123222")
-            
-            Spacer()
-                .frame(width: 0, height: 30)
-                .clipped()
-            
-            TextField("Enter App ID", text: $appid)
-                .frame(maxWidth: 300) .textFieldStyle(.roundedBorder)
-            
-            Spacer()
-                .frame(width: 0, height: 20)
-                .clipped()
-            
-            Link("Inject to specified App ID", destination: URL(string: "sidestore://sidejit-enable?url=\(appid)")!).buttonStyle(ButtonFromInteractfulROFL()) .frame(maxWidth: 300)
-            
+        List {
+            Section {
+                VStack {
+                    Text("JitKit SbATU POC")
+                        .font(.largeTitle.weight(.medium))
+                    
+                    Spacer()
+                        .frame(width: 0, height: 20)
+                        .clipped()
+                    
+                    TextField("Enter App ID", text: $writtenappid)
+                        .frame(maxWidth: 300) .textFieldStyle(.roundedBorder)
+                    
+                    Spacer()
+                        .frame(width: 0, height: 20)
+                        .clipped()
+                    
+                    Link("Inject to specified App ID", destination: URL(string: "sidestore://sidejit-enable?url=\(writtenappid)")!).buttonStyle(ButtonFromInteractfulROFL()) .frame(maxWidth: 300)
+                    
+                }
+            }
         }
     }
 }
