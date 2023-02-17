@@ -8,45 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @State var writtenappid = ("")
-    
     var body: some View {
         NavigationView {
             List {
-                
                 Section {
                     VStack {
                         Spacer()
                             .frame(width: 0, height: 10)
                             .clipped()
-                        
                         TextField("Enter App ID", text: $writtenappid)
-                            .frame(maxWidth: 300) .textFieldStyle(.roundedBorder)
-                        
+                        .textFieldStyle(.roundedBorder)
                         Spacer()
                             .frame(width: 0, height: 15)
                             .clipped()
-                        
-                        Link("Inject to specified App ID", destination: URL(string: "sidestore://sidejit-enable?url=\(writtenappid)")!).buttonStyle(ButtonFromInteractfulROFL()) .frame(maxWidth: 300)
-                        
+                        Link("Inject to specified App ID", destination: URL(string: "sidestore://sidejit-enable?url=\(writtenappid)")!).buttonStyle(ButtonFromInteractfulROFL())
                         Spacer()
-                            .frame(width: 0, height: 10)
+                            .frame(width: 0, height: 20)
                             .clipped()
-                        
+                        NavigationLink(destination: DoomMind()) {
+                                Text("View Saved App IDs")
+                            }
                     }
+                } header: {
+                    Text("sidestore url scheme poc")
                 }
-                
+                footer: {
+                    Text("You can have up to 2 saved App IDs for the app to remember. These can be changed at any time.")
+                }
                 Section {
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                        Text("View App ID Slots")
-                    } .buttonStyle(ButtonFromInteractfulROFL())
+                    NavigationLink(destination: Creds()) {
+                        Text("View Credits")
+                    }
+                } header: {
+                    Text("other")
                 } footer: {
-                    Text("- JitKit SbATU POC by swifticul \n- SideStore by SideTeam \n- SideJIT call URL scheme update by Spidy123222")
+                    Text("sbatupoc v2.0.0")
                 }
-            } .navigationTitle("JitKit SbATU POC")
-            
-        }
+            } .navigationTitle("JitKit SbATU")
+        } .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
