@@ -2,7 +2,7 @@
 //  Creds.swift
 //  JitKit SbATU POC
 //
-//  Created by Theo De Roy on 16/02/2023.
+//  Created by Tristan on 16/02/2023.
 //
 
 import SwiftUI
