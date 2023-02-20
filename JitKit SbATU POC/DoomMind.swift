@@ -98,7 +98,7 @@ struct DoomMind: View {
                 }
 
             }
-        } .navigationBarTitle("Saved App IDs")
+        } .navigationBarTitle("Saved App IDs") .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

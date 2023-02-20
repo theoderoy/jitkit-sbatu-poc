@@ -300,7 +300,7 @@ struct DoomMindMDCView: View {
                                         }
                                     }
             }
-          } .navigationBarTitle("MacDirtyCow App IDs")
+          } .navigationBarTitle("MacDirtyCow App IDs") .navigationViewStyle(StackNavigationViewStyle())
         }
 }
 

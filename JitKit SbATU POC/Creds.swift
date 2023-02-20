@@ -17,7 +17,7 @@ struct Creds: View {
                     Text("SideStore by SideTeam")
                     Text("sidejit-enable URL scheme update by Spidy")
             }
-        } .navigationBarTitle("Credits")
+        } .navigationBarTitle("Credits") .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
