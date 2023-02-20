@@ -86,12 +86,17 @@ struct DoomMind: View {
                                 .frame(width: 0, height: 10)
                         }
                     }
+                if #available(iOS 16.2, *) {
+                    Text("MacDirtyCow features are unsupported on iOS 16.2 and above.")
+                } else {
                     Section {
                         Toggle("Increase App ID limit (MacDirtyCow)", isOn: $macdirtycow)
                         NavigationLink(destination: DoomMindMDCView()) {
                             Text("MacDirtyCow App ID Slots")
                         } .disabled(macdirtycow == false)
                     }
+                }
+
             }
         } .navigationBarTitle("Saved App IDs")
     }
