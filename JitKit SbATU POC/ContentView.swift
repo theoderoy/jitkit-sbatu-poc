@@ -22,7 +22,7 @@ struct ContentView: View {
                         Spacer()
                             .frame(width: 0, height: 15)
                             .clipped()
-                        Link("Inject to specified App ID", destination: URL(string: "sidestore://sidejit-enable?url=\(writtenappid)")!).buttonStyle(ButtonFromInteractfulROFL())
+                        Link("Inject to specified App ID", destination: URL(string: "sidestore://sidejit-enable?bid=\(writtenappid)")!).buttonStyle(ButtonFromInteractfulROFL())
                         Spacer()
                             .frame(width: 0, height: 20)
                             .clipped()
