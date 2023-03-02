@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     @State var writtenappid = ("")
     var body: some View {
         NavigationView {
@@ -43,7 +44,7 @@ struct ContentView: View {
                 } header: {
                     Text("other")
                 } footer: {
-                    Text("sbatupoc v2.0.0")
+                    Text("sbatupoc \(appVersion ?? "AppVersion")")
                 }
             } .navigationTitle("JitKit SbATU")
         } .navigationViewStyle(StackNavigationViewStyle())
