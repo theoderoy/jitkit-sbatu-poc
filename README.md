@@ -9,7 +9,7 @@ this is a proof-of-concept iOS application that automates JIT-acceleration with 
 ### Requirements
 
 - iOS 14.0 or later (iOS 16.0 or later for v2.0.0)
-- v1.0.0 works with SideStore 2/10/23 pull-request build and v1.1.0 works with SideStore 2/11/23 pull-request build or later
+- SideStore 3/1/23 pull-request build or later for v2.1.0, PRB 2/11/23 or later for v1.1.0 and PRB 2/10/23 or later for v1.1.0
 - the JITtable app :trollface:
 
 ### Notes
