@@ -36,7 +36,7 @@ fi
 # Add entitlements
 echo "Doin the thang"
 mkdir Payload
-cp -r JitKit-SbATU-POC.app Payload/JitKit-SbATU-POC.app
-zip -vr JitKit-SbATU-POC.ipa Payload
-rm -rf JitKit-SbATU-POC.app
+cp -r StoreControl.app Payload/JitKit-SbATU-POC.app
+zip -vr StoreControl.ipa Payload
+rm -rf StoreControl.app
 rm -rf Payload
